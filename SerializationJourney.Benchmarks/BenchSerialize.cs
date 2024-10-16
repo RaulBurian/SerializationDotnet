@@ -68,13 +68,13 @@ public class BenchSerialize
     [Benchmark]
     public string NewtonsoftString()
     {
-        return JsonSerializer.Serialize(_demoEntry);
+        return JsonConvert.SerializeObject(_demoEntry);
     }
 
     [Benchmark]
     public byte[] NewtonsoftBytesReg()
     {
-        return Encoding.UTF8.GetBytes(JsonSerializer.Serialize(_demoEntry));
+        return Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(_demoEntry));
     }
 
     [Benchmark]
