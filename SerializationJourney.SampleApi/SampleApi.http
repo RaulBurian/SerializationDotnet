@@ -1,0 +1,12 @@
+@SampleApi_HostAddress = http://localhost:5147
+
+POST {{SampleApi_HostAddress}}/todo/
+Accept: application/json
+Content-Type: application/json
+
+{
+  "index": 15,
+  "name": "string asdfd \" <>>^&",
+  "extraProp": "string"
+}
+###
